@@ -1,10 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv')
+const cors = require('cors');
+const todos = require('./routes/todos')
 
 const app = express();
 dotenv.config({ path: '../.env'});
 
+app.use(cors())
+app.use(express.json())
+app.use("/api/todos", todos)
 
 app.get("/", (req, res) => {
     res.send("Welcome to our todos api")
