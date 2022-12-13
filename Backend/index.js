@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const todos = require("./routes/todos");
+const signUp = require("./routes/signUp")
 
 const app = express();
 dotenv.config({ path: "./.env" });
