@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const todos = require("./routes/todos");
-const signUp = require("./routes/signUp")
+const signUp = require("./routes/signUp");
 
 const app = express();
 dotenv.config({ path: "./.env" });
@@ -11,6 +11,7 @@ dotenv.config({ path: "./.env" });
 app.use(cors());
 app.use(express.json());
 app.use("/api/todos", todos);
+app.use("/api/signup", signUp);
 
 app.get("/", (req, res) => {
   res.send("Welcome to our todos api");
