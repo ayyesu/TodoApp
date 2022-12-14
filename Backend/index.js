@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const todos = require("./routes/todos");
 const signUp = require("./routes/signUp");
+const signIn = require("./routes/signin");
 
 const app = express();
 dotenv.config({ path: "./.env" });
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/todos", todos);
 app.use("/api/signup", signUp);
+app.use("/api/signin", signIn)
 
 app.get("/", (req, res) => {
   res.send("Welcome to our todos api");
