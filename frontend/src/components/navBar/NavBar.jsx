@@ -17,28 +17,28 @@ const NavBar = () => {
       <div className="container flex justify-between">
         <div className="mt-2">
           <Link className="mt-5" to="/">
-            <h1 className="text-4xl no-underline text-white font-bold">ToDo</h1>
+            <h1 className="text-4xl no-underline text-blue-500 font-bold">ToDo</h1>
           </Link>
           <span className="text-white">User: Daniel</span>
         </div>
         <div className="flex mt-5">
           <button
-            className="bg-red-700 m-1 h-10 rounded-lg p-2"
+            className="text-white m-1 h-10 rounded-lg p-2"
             onClick={() => handleSignOut}
           >
-            SignOut
+            SIGNOUT
           </button>
           <button
-            className="bg-green-700 m-1 h-10 rounded-lg p-2"
+            className="text-white m-1 h-10 rounded-lg p-2"
             onClick={() => handleSignUp}
           >
-            SignUp
+            SIGNUP
           </button>
           <button
-            className="bg-blue-700 m-1 h-10 rounded-lg p-2"
+            className="text-white m-1 h-10 rounded-lg p-2"
             onClick={() => handleSignIn}
           >
-            SignIn
+            SIGNIN
           </button>
         </div>
       </div>

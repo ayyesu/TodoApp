@@ -10,11 +10,13 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/" exact element={<Todos />} />
-        </Routes>
+        <div className="m-auto max-w-sm mt-10">
+          <Routes>
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/" exact element={<Todos />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   );
