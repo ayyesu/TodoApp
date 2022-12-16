@@ -3,7 +3,14 @@ import React from 'react';
 const ListTodos = () => {
     return ( 
         <>
-        <h2>ListTodos</h2>
+        <div>
+            <div>
+                <h1>ToDo List</h1>
+            </div>
+            <div>
+                
+            </div>
+        </div>
         </>
      );
 }
